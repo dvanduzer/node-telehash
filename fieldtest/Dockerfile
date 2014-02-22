@@ -12,7 +12,7 @@ RUN add-apt-repository ppa:chris-lea/node.js
 RUN apt-get update
 RUN apt-get install -y nodejs
 
-ADD . /telehash
+ADD .. /telehash
 RUN cd /telehash; npm install
 
 # FieldTest doesn't currently let you specify the port.
